@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <title>HTML 5 Registration Form - Krishna</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body> 
+    <form>
+        <div class="container">
+            <center>
+                <h1>Employee Registration Form - HTML 5</h1>
+            </center>
+            <hr>
+            <label>FirstName</label>
+            <input type="text" name="firstname" placeholder="Firstname" size="15">
+            <label>MiddleName</label>
+            <input type="text" name="middlename" placeholder="Middlename" size="15">
+            <label>LastName</label>
+            <input type="text" name="lastname" placeholder="Lastname" size="15">
+            <div>
+                <label>Department:</label>
+                
+                <select>
+                    <option value="Department">--Department--</option>
+                    <option value="Product Engineering">Product Engineering</option>
+                    <option value="Design Studio">Design Studio</option>
+                    <option value="Digital Infrstructure">Digital Infrstructure</option>
+                    <option value="Analytics">Analytics</option>
+                    <option value="HR">HR</option>
+                    <option value="CSR">CSR & Sustainability</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <label>Gender:</label><br>
+            <input type="radio" value="male" name="gender" checked>Male</input>
+            <input type="radio" value="male" name="gender">Female</input>
+        </div>
+        <label>Phone:</label>
+        <input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/>   
+        <input type="text" name="phone" placeholder="phone no." size="10"/ required>  
+        Current Working Location :  <select><option value="Sapphire">Sapphire</option>
+        <option value="SJR">SJR Hub</option></select>
+        <textarea cols="80" rows="5" placeholder="Current Address" value="address" required>  
+        </textarea>  
+        <input type="checkbox" id="wfh" name="workfromhome" value="wfh">
+        <label for="wfh"> Working From Home</label><br>
+        <input type="checkbox" id="wfo" name="workfromoffice" value="wfo" checked>
+        <label for="wfo"> Working From Office</label><br><br>
+        <label for="email"><b>Enter your Brillio ID</b></label>  
+        <input type="text" placeholder="Enter Email" name="email" required>  
+        <label for="psw"><b>Password</b></label>  
+        <input type="password" placeholder="Enter Password" name="psw" required>  
+        <label for="psw-repeat"><b>Re-type Password</b></label>  
+        <input type="password" placeholder="Retype Password" name="psw-repeat" required>  
+        <button type="submit" class="registerbtn">Register</button>  
+    </form>
+</body>
